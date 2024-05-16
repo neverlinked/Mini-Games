@@ -1,0 +1,43 @@
+body {
+    background: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .canvas {
+    width: 90px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .pixel {
+  
+    width: 10px;
+    height: 10px;
+    box-shadow: 0px 0px 1px #fff;
+  
+  }
+
+  .red {
+    background: red;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  @media screen and (max-width: 600px) {
+    .red {
+      background: green;
+    }
+    .yellow {
+      background-color: blue;
+    }
+    .pixel {
+      height: 
+      width: 
+    }
+  }

@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    }
+    #game {
+    text-align: center;
+    }
+    #board {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    gap: 5px;
+    }
+    .cell {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    }
+    #cell {
+        border: 1px solid #ccc; /* Defaults basically */
+      }
+      
+      .normal { 
+        border: 1px solid #ccc;
+      }
+    #status {
+    margin-bottom: 20px;
+    }
+    #restart {
+    margin-top: 20px;
+    }
+    .winning {
+        border: 5px solid green; /* Highlight with green border */
+      }
+      
+      .winning.X {  /* Change color to green for winning X */
+        color: green;
+      }
+      
+      .winning.O {  /* Change color to red for winning O */
+        color: green;
+      }
+
+      .animated {
+        animation: shake 0.5s linear infinite; /* Simple shaking animation */
+      }
+      
+      @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        50% { transform: translateX(10px); }
+        75% { transform: translateX(-5px); }
+        100% { transform: translateX(0); }
+      }
+
+      
